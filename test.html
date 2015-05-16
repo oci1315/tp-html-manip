@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Document servant de test aux fonctions de manipulation de l'arbre de document HTML</title>
+</head>
+
+<body>
+<h1>Document de test</h1>
+
+<p id="introduction">
+Ce Document permet de tester différentes fonctionnalités de manipulation 
+de fichiers HTML grâce à la représentation en arbre du code HTML.
+</p>
+
+<h2>Section 1 : les arbres</h2>
+
+<h2>Section 2 : représentation de documents HTML par des arbres</h2>
+
+<h3>Sous-section 1</h3>
+<p class="contenu">
+Avant de pouvoir afficher un document HTML, un navigateur Web doit
+pouvoir comprendre ce code HTML. Il va effectuer une analyse du code
+et transformer ce code linéaire en une structure d'arbre beaucoup plus
+pratique à gérer puisque le code HTML n'est rien d'autre qu'un emboîtement 
+de balises les unes dans les autres.
+</p>
+
+Pour plus d'informations, consulter les liens suivants
+<ul>
+<li>
+<a href="http://fr.wikipedia.org/wiki/Document_Object_Model">Référence 
+sur le DOM (Document Object Model)</a>
+</li>
+<li>
+<a href="http://lti.epfl.ch/Documents/object_DOM.pdf">Cours de l'EPFL sur le DOM</a>
+</li>
+
+<li>
+<a href="http://rubydoc.info/github/gregbell/active_admin/master/Arbre/HTML/Element">
+Implémentation d'un arbre pour la représentation d'un document HTML dans le langage Ruby</a>
+</li>
+</ul>
+
+<h3>Sous-section 2</h3>
+
+Voici quelques liens bidons uniquement pour les besoins du test
+<ul>
+<li><a href="http://www.google.ch">Page d'accueil de Google</a></li>
+<li><a href="http://www.collegedusud.ch">Collège du Sud</a></li>
+<li><a href="http://www.python.org">Site officiel du langage Python</a></li>
+</ul>
+<h3>Sous-section 3</h3>
+
+<h2>Section 3 : génération de code HTML à partir d'un arbre</h2>
+
+<p class="contenu">
+Une fois que l'on dispose de l'arbre qui représente le document HTML,
+il est non seulement très facile de le manipuler, mais également de
+générer le code HTML correspondant. Ceci est donc très utile pour 
+modifier un fichier HTML existant.
+</p>
+<h3>Exemple de manipulations qu'il est possible d'effectuer</h3>
+
+<ul>
+<li> Extraire du fichier HTML tous les liens contenus dans le document.
+Il suffit pour ce faire de parcourir l'arbre de représentation et de
+s'intéresser aux noeuds qui référencent une balise <code>&lt;a&gt;</code>
+</li>
+<li> Compter le nombre de mots qu'il y a dans le fichier HTML
+</li>
+<li>
+Rechercher tous les titres du document et générer une table des matières
+</li>
+<li>
+Générer une version texte (ascii) sans mise en forme
+</li>
+<li>
+Corriger l'indentation du code HTML (L'indentation dépend alors du 
+niveau dans l'arbre
+</li>
+
+</ul>
+<p class="contenu">
+Exemple 
+</p>
+</body>
+
+</html>
+
