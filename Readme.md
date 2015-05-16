@@ -19,3 +19,12 @@ en local et en faisant un `git checkout corrige` comme suit :
 $ git clone https://github.com/oci1315/tp-html-manip.git
 $ git checkout corrige
 ```
+
+## Tests
+
+Les tests sont effectués dans le fichier `test.py`
+(https://github.com/oci1315/tp-html-manip/blob/master/tests.py) 
+à l'aide du module Python
+`unittest`. Les tests utilisent des assertions et sont assez intéressants 
+puisqu'ils n'impriment pas les arbres sur la sortie standard mais teste 
+leur équivalence à un certain code HTML de test.
