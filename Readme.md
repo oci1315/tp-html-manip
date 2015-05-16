@@ -1,6 +1,6 @@
 # Manipulation de documents HTML
 
-## Donnéest
+## Donnée
 
 La branche `master` du dépôt contient les fichiers nécessaires à la réalisation du projet.
 
