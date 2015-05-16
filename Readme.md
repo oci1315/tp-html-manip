@@ -8,7 +8,9 @@ La branche `master` du dépôt contient les fichiers nécessaires à la réalisa
 
 Le corrigé du TP est disponible dans la branche `corrige`. Pour visiter cette branche, 
 on peut se rendre directement sur GitHub et changer la branche avec le 
-contrôle de sélection en haut.
+contrôle de sélection en haut. 
+
+Lien du corrigé : https://github.com/oci1315/tp-html-manip/tree/corrige
 
 Il est également possible de visiter cette branche `corrige` en clonant le dépôt
 en local et en faisant un `git checkout corrige` comme suit :
