@@ -76,16 +76,20 @@ class TestGetElements(ManipTestCase):
 
 class TestTableMatieres(ManipTestCase):
     
-    def test_default_level(self):
-        self.assertEqual(
+    def test_default_level_is_2(self):
+        self.assertTreeEqual(
             table_matieres(self.root),
             table_matieres(self.root, level=2)
         )
         
+    def test_root_is_div(self):
+        root = table_matieres(self.root, level=3)
+        self.assertIsInstance(root, Div)
+        
     def test_from_file(self):
         headers = table_matieres(self.root, level=3)
         self.assertEqual(
-            [h.tag for h in headers],
+            [h.tag for h in headers.children],
             ['h1', 'h2', 'h2', 'h3', 'h3', 'h3', 'h2', 'h3', ]
         )
         

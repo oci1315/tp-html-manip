@@ -24,8 +24,8 @@ def get_elements(tree, selectors):
     
 def table_matieres(root, level=2):
     hlevels = ['h' + str(lev+1) for lev in range(level)]
-    headers = get_elements(root, hlevels)
-    return headers
+    return Div() > get_elements(root, hlevels)
+    
     
     
 def remove_links(root):
